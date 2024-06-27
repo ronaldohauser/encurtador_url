@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encurtador de URL</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-GiZ5E2LkA8cMnA3XxYulD9C2xxkcPHi5zyvh1vZ4h3Yp7fA61s6M8GqJYf9Y1pPtF1ExP4T8kP9ZKsZ1XtO7AA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <i class="fas fa-link fa-3x"></i>
+        <h1>Encurtador de URL</h1>
+    </div>
+    <p class="instructions">1. Copie e cole abaixo a URL; <br> 2. Em seguida, clique em "Encurtar URL"; <br>3. Obtenha a versão reduzida da sua URL.</p>
+    <form id="urlForm">
+        <input type="url" id="originalUrl" placeholder="Digite sua URL longa aqui" required>
+        <button type="submit">Encurtar URL</button>
+    </form>
+    <div id="shortenedUrlContainer" style="display: none;">
+        <p>URL encurtada:</p>
+        <a id="shortenedUrl" target="_blank"></a>
+    </div>
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Ronaldo H. Dias.</p>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
